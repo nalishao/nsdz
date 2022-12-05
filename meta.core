@@ -51,10 +51,6 @@ proxies:
     recv_window: 46137344
     disable_mtu_discovery: true
     
-   
- 
-
-
 proxy-groups:
   - name: "PROXY"
     type: select
