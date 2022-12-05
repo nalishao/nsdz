@@ -56,8 +56,8 @@ proxies:
     server: nsdz1999.cf
     port: 11119
     password: bpdMyNEArI
-    udp:true 
-    skip-cert-verify:true
+    udp: true 
+    skip-cert-verify: true
  
 
 
