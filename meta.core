@@ -56,9 +56,6 @@ proxy-groups:
     type: select
     proxies:
      - Hys-47.87.154.147
-
-  - name: "PROXY"
-    type: select
     proxies:
      - Hys-51.159.37.40     
 
