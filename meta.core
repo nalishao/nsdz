@@ -17,7 +17,24 @@ dns:
   fallback:
     - 114.114.114.114
     - 223.5.5.5
-
+    
+proxies:
+  - name: "Hys-51.159.37.40"
+    type: hysteria
+    server: 51.159.37.40
+    port: 1554
+    auth_str: jinzige520
+    alpn:
+      - h3
+    protocol: udp
+    up: 22
+    down: 110
+    sni: wechat.com
+    skip-cert-verify: true
+    recv_window_conn: 11534336
+    recv_window: 46137344
+    disable_mtu_discovery: true
+    
 proxies:
   - name: "Hys-47.87.154.147"
     type: hysteria
