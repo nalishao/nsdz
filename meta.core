@@ -51,7 +51,7 @@ proxies:
     recv_window: 46137344
     disable_mtu_discovery: true
     
-   - name: "trojan"
+   - name: "trojan nsdz"
     type: trojan
     server: nsdz1999.cf
     port: 11119
@@ -67,7 +67,7 @@ proxy-groups:
     proxies:
      - Hys-47.87.154.147
      - Hys-51.159.37.40     
-     - trojan
+     - trojan nsdz
 
 rule-providers:
   reject:
