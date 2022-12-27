@@ -38,17 +38,17 @@ proxies:
   - name: "Hys-51.159.37.40"
     type: hysteria
     server: 51.159.37.40
-    port: 1554
-    auth_str: jinzige520
+    port: 1551
+    obfs: I0VCEj1wzcLJ6aQ5KCpSgG0DDZ5zPYVFZyAPoajOArNPLeObts
     alpn:
       - h3
     protocol: udp
-    up: 22
-    down: 110
+    up: 11
+    down: 55
     sni: wechat.com
     skip-cert-verify: true
-    recv_window_conn: 11534336
-    recv_window: 46137344
+    recv_window_conn: 5767168
+    recv_window: 23068672
     disable_mtu_discovery: true
     
    
