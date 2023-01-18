@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2023-01-18 10:29:25
+#  创建时间：2023-01-18 10:49:29
 #  模版：v2rayse默认模版
-#  节点数量：5
+#  节点数量：1
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -21,10 +21,6 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - yx54321.tk_Trojan
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -32,10 +28,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - yx54321.tk_Trojan
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -43,40 +35,24 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - yx54321.tk_Trojan
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - yx54321.tk_Trojan
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - yx54321.tk_Trojan
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - yx54321.tk_Trojan
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,10 +76,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - yx54321.tk_Trojan
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
-      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
