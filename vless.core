@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2022-12-05 23:08:27
+#  创建时间：2023-01-18 10:29:25
 #  模版：v2rayse默认模版
-#  节点数量：3
+#  节点数量：5
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,60 +13,74 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vless","name":"default_name_1","server":"nsdz1999.cf","port":11843,"uuid":"41e10beb-ad4c-4d7b-bf83-bc1f00298d88","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-direct","tls":false,"udp":true}
-  - {"type":"trojan","name":"default_name_2","server":"nsdz1999.cf","port":11119,"password":"bpdMyNEArI","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"","server":"nsdz1999.cf","port":"46946","uuid":"c7092956-3a39-48f7-ed96-5118f08b4aef","alterId":"0","cipher":"auto","network":"tcp","tls":true}
+  - {"type":"trojan","name":"yx54321.tk_Trojan","server":"yx54321.tk","port":443,"password":"de3817f2-1a57-49e4-ba91-749a876e8858","udp":true,"skip-cert-verify":true,"sni":"yx54321.tk","network":"tcp"}
+  - {"type":"vless","name":"yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS","server":"yx54321.tk","port":443,"uuid":"de3817f2-1a57-49e4-ba91-749a876e8858","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yx54321.tk","tls":true,"udp":true}
+  - {"type":"vless","name":"yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC","server":"yx54321.tk","port":443,"uuid":"de3817f2-1a57-49e4-ba91-749a876e8858","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"1111grpc"},"servername":"yx54321.tk"}
+  - {"type":"vmess","name":"yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS","ws-opts":{"path":"/1111vws","headers":{"host":"yx54321.tk"}},"server":"yx54321.tk","port":"443","uuid":"de3817f2-1a57-49e4-ba91-749a876e8858","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vless","name":"yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS","server":"yx54321.tk","port":443,"uuid":"de3817f2-1a57-49e4-ba91-749a876e8858","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"yx54321.tk","ws-opts":{"path":"/1111ws","headers":{"host":"yx54321.tk"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - default_name_1
-      - default_name_2
-      - ''
+      - yx54321.tk_Trojan
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - default_name_1
-      - default_name_2
-      - ''
+      - yx54321.tk_Trojan
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - default_name_1
-      - default_name_2
-      - ''
+      - yx54321.tk_Trojan
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - default_name_1
-      - default_name_2
-      - ''
+      - yx54321.tk_Trojan
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - default_name_1
-      - default_name_2
-      - ''
+      - yx54321.tk_Trojan
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - default_name_1
-      - default_name_2
-      - ''
+      - yx54321.tk_Trojan
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -89,9 +103,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - default_name_1
-      - default_name_2
-      - ''
+      - yx54321.tk_Trojan
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_TCP/XTLS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS
+      - yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
