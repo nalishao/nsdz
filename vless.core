@@ -14,7 +14,6 @@ log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
   - {"type":"trojan","name":"yx54321.tk_Trojan","server":"yx54321.tk","port":443,"password":"de3817f2-1a57-49e4-ba91-749a876e8858","udp":true,"skip-cert-verify":true,"sni":"yx54321.tk","network":"tcp"}
-  - {"type":"vless","name":"yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_gRPC","server":"yx54321.tk","port":443,"uuid":"de3817f2-1a57-49e4-ba91-749a876e8858","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"1111grpc"},"servername":"yx54321.tk"}
   - {"type":"vmess","name":"yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VMess_WS","ws-opts":{"path":"/1111vws","headers":{"host":"yx54321.tk"}},"server":"yx54321.tk","port":"443","uuid":"de3817f2-1a57-49e4-ba91-749a876e8858","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vless","name":"yx54321.tk_de3817f2-1a57-49e4-ba91-749a876e8858_VLESS_WS","server":"yx54321.tk","port":443,"uuid":"de3817f2-1a57-49e4-ba91-749a876e8858","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"yx54321.tk","ws-opts":{"path":"/1111ws","headers":{"host":"yx54321.tk"}}}
 proxy-groups:
