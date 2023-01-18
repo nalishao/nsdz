@@ -22,13 +22,13 @@ proxies:
   - name: "Hys-47.87.154.147"
     type: hysteria
     server: 47.87.154.147
-    port: 40000
-    auth_str: jinzige520
+    port: 33333
+    auth_str: de3817f2-1a57-49e4-ba91-749a876e8858
     alpn:
       - h3
     protocol: udp
     up: 22
-    down: 110
+    down: 100
     sni: nsdz1999.cf
     skip-cert-verify: true
     recv_window_conn: 11534336
