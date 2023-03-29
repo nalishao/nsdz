@@ -22,7 +22,7 @@ proxies:
   - name: "Hys-hys-1"
     type: hysteria
     server: yx54321.tk
-    ports: 47000-47500
+    ports: 47000-48000
     auth_str: jinzige520
     alpn:
       - h3
