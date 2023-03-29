@@ -23,7 +23,6 @@ dns:
 proxies:
   - {"name":"yx54321.tk-trojan","type":"trojan","server":"yx54321.tk","port":443,"udp":true,"password":"e7bc061d-98e7-4322-979e-cafdde6bd5e0","sni":"yx54321.tk","skip-cert-verify":true,"network":"tcp","alpn":["http/1.1"]}
   - {"name":"yx5-vless-ws","type":"vless","server":"yx54321.tk","port":443,"uuid":"e7bc061d-98e7-4322-979e-cafdde6bd5e0","tls":true,"servername":"yx54321.tk","network":"ws","ws-opts":{"path":"/baheyiws","headers":{"host":"yx54321.tk"}}}
-  - {"name":"yx5-vmess-ws","type":"vmess","server":"yx54321.tk","port":443,"cipher":"auto","uuid":"e7bc061d-98e7-4322-979e-cafdde6bd5e0","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"yx54321.tk","network":"ws","ws-opts":{"path":"/baheyivws","headers":{"host":"yx54321.tk"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
