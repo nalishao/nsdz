@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2023-03-29 11:20:21
+# 创建时间：2023-03-29 11:42:47
 # 使用模版：V2RaySE 默认模版
-# 节点数量：4
+# 节点数量：3
 ####################################
 mixed-port: 7890
 allow-lan: true
@@ -22,11 +22,8 @@ dns:
 
 proxies:
   - {"name":"yx54321.tk-trojan","type":"trojan","server":"yx54321.tk","port":443,"udp":true,"password":"e7bc061d-98e7-4322-979e-cafdde6bd5e0","sni":"yx54321.tk","skip-cert-verify":true,"network":"tcp","alpn":["http/1.1"]}
- 
   - {"name":"yx5-vless-ws","type":"vless","server":"yx54321.tk","port":443,"uuid":"e7bc061d-98e7-4322-979e-cafdde6bd5e0","tls":true,"servername":"yx54321.tk","network":"ws","ws-opts":{"path":"/baheyiws","headers":{"host":"yx54321.tk"}}}
   - {"name":"yx5-vmess-ws","type":"vmess","server":"yx54321.tk","port":443,"cipher":"auto","uuid":"e7bc061d-98e7-4322-979e-cafdde6bd5e0","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"yx54321.tk","network":"ws","ws-opts":{"path":"/baheyivws","headers":{"host":"yx54321.tk"}}}
-
-
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -34,7 +31,6 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - yx54321.tk-trojan
-   
       - yx5-vless-ws
       - yx5-vmess-ws
   - name: ♻️ 自动选择
@@ -44,7 +40,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - yx54321.tk-trojan
-      - yx5-xray-vision
       - yx5-vless-ws
       - yx5-vmess-ws
   - name: 🌍 国外媒体
@@ -54,7 +49,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - yx54321.tk-trojan
-      - yx5-xray-vision
       - yx5-vless-ws
       - yx5-vmess-ws
   - name: 📲 电报信息
@@ -63,7 +57,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - yx54321.tk-trojan
-      - yx5-xray-vision
       - yx5-vless-ws
       - yx5-vmess-ws
   - name: Ⓜ️ 微软服务
@@ -72,7 +65,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - yx54321.tk-trojan
-      - yx5-xray-vision
       - yx5-vless-ws
       - yx5-vmess-ws
   - name: 🍎 苹果服务
@@ -81,7 +73,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - yx54321.tk-trojan
-      - yx5-xray-vision
       - yx5-vless-ws
       - yx5-vmess-ws
   - name: 🎯 全球直连
@@ -107,7 +98,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - yx54321.tk-trojan
-      - yx5-xray-vision
       - yx5-vless-ws
       - yx5-vmess-ws
 
