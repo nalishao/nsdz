@@ -13,53 +13,33 @@ dns:
   enhanced-mode: redir-host
   nameserver:
     - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
+    - https://223.5.5.5/dns-query
   fallback:
     - 114.114.114.114
-    - 223.5.5.5 
-    
+    - 223.5.5.5
+
 proxies:
-  - name: "Hys-47.87.154.147"
+  - name: "Hys-hys-1"
     type: hysteria
-    server: 47.87.154.147
-    port: 33333
-    auth_str: de3817f2-1a57-49e4-ba91-749a876e8858
-    alpn:
-      - h3
-    protocol: udp
-    up: 22
-    down: 100
-    sni: nsdz1999.cf
-    skip-cert-verify: true
-    recv_window_conn: 11534336
-    recv_window: 46137344
-    disable_mtu_discovery: true
-    
-  - name: "Hys-51.159.37.40"
-    type: hysteria
-    server: 51.159.37.40
-    port: 1551
-    obfs: I0VCEj1wzcLJ6aQ5KCpSgG0DDZ5zPYVFZyAPoajOArNPLeObts
+    server: yx54321.tk
+    ports: 47000-48000
+    auth_str: jinzige520
     alpn:
       - h3
     protocol: udp
     up: 11
-    down: 55
-    sni: wechat.com
-    skip-cert-verify: true
-    recv_window_conn: 5767168
-    recv_window: 23068672
+    down: 110
+    sni: yx54321.tk
+    skip-cert-verify: false
+    recv_window_conn: 10223616
+    recv_window: 40894464
     disable_mtu_discovery: true
-    
-   
-    
+    fast-open: true
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-     - Hys-47.87.154.147
-     - Hys-51.159.37.40     
- 
+     - Hys-hys-1
 
 rule-providers:
   reject:
@@ -164,6 +144,7 @@ rules:
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN,services.googleapis.cn,PROXY
   - RULE-SET,private,DIRECT
   - RULE-SET,reject,REJECT
   - RULE-SET,icloud,DIRECT
