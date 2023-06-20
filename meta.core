@@ -19,27 +19,27 @@ dns:
     - 223.5.5.5
 
 proxies:
-  - name: "Hys-hys-1"
+  - name: "Hys-47.87.215.187"
     type: hysteria
-    server: yx54321.tk
+    server: 47.87.215.187
     ports: 47000-48000
-    auth_str: jinzige520
+    auth_str: PTZIYFRcFbV3EHNaH9pzcVB4zgwmZRq3HU70qUcw3VFSdcNVNF
     alpn:
       - h3
     protocol: udp
     up: 11
-    down: 110
-    sni: yx54321.tk
-    skip-cert-verify: false
-    recv_window_conn: 10223616
-    recv_window: 40894464
+    down: 55
+    sni: wechat.com
+    skip-cert-verify: true
+    recv_window_conn: 5767168
+    recv_window: 23068672
     disable_mtu_discovery: true
     fast-open: true
 proxy-groups:
   - name: "PROXY"
     type: select
     proxies:
-     - Hys-hys-1
+     - Hys-47.87.215.187
 
 rule-providers:
   reject:
